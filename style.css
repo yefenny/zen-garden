@@ -7,6 +7,7 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://use.typekit.net/eyr4fwr.css");
 html {
   margin: 0;
   padding: 0;
@@ -78,8 +79,97 @@ body {
   color: #000000;
 }
 .page-wrapper .intro .preamble {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin-top: 20rem;
+  background-color: #FFFFFF;
+  overflow-y: hidden;
+  padding-bottom: 3vw;
+}
+.page-wrapper .intro .preamble h3 {
+  width: 50%;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 12.5rem;
+  line-height: 11.375rem;
+  padding-top: 5.677vw;
+  padding-bottom: 0;
+  margin: 0;
+  margin-left: 7.76vw;
+  z-index: 3;
+}
+.page-wrapper .intro .preamble p {
+  font-family: "panno-text", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  width: 32.344vw;
+  margin-left: 7.76vw;
+}
+.page-wrapper .intro .preamble p:last-child::after {
+  box-sizing: border-box;
+  position: absolute;
+  top: -3vw;
+  z-index: 0;
+  right: 0;
+  content: "";
+  background: url("/images/mountains.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 49.479vw;
+  height: 100%;
+}
+.page-wrapper #zen-supporting {
+  position: relative;
+  background-color: #9EB2A4;
+  color: #ffffff;
+}
+.page-wrapper #zen-supporting h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+.page-wrapper #zen-supporting p {
+  font-family: "panno-text", sans-serif;
+  font-size: 1.5rem;
+}
+.page-wrapper #zen-supporting .explanation {
+  width: 50%;
+}
+.page-wrapper #zen-supporting .explanation h3, .page-wrapper #zen-supporting .explanation p {
+  margin-left: 9.115vw;
+}
+.page-wrapper #zen-supporting .explanation h3 {
+  padding-top: 3.417vw;
+  font-size: 5.625rem;
+}
+.page-wrapper #zen-supporting .explanation p {
+  width: 32.344vw;
+  font-size: 1.5rem;
+}
+.page-wrapper #zen-supporting .participation {
+  width: 50%;
+  position: absolute;
+  top: 3.417vw;
+  left: 60%;
+}
+.page-wrapper #zen-supporting .participation h3 {
+  position: absolute;
+  top: 10vw;
+  left: -40%;
+  color: #000000;
+  font-size: 6.25rem;
+  transform: rotate(-0.25turn);
+}
+.page-wrapper #zen-supporting .participation p {
+  width: 35.344vw;
+  position: relative;
+  left: -5%;
+}
+.page-wrapper #zen-supporting .participation p a {
+  color: #ffffff;
 }
 .page-wrapper .viewall {
   font-family: "Bebas Neue", sans-serif;
