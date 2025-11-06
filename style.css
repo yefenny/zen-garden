@@ -9,16 +9,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://use.typekit.net/eyr4fwr.css");
 html {
+  font-size: calc(0.517799352vh + 0.5177993528vw);
   margin: 0;
   padding: 0;
 }
 
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding: 0;
   margin: 0;
@@ -32,7 +41,7 @@ body {
 }
 .page-wrapper .intro header h1 {
   padding: 0;
-  margin: 0;
+  margin: 1vw;
   font-size: 2.5rem;
   margin-left: 4rem;
 }
@@ -115,7 +124,7 @@ body {
   z-index: 0;
   right: 0;
   content: "";
-  background: url("/images/mountains.jpg");
+  background: url("images/mountains.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 49.479vw;
@@ -125,6 +134,7 @@ body {
   position: relative;
   background-color: #9EB2A4;
   color: #ffffff;
+  padding-bottom: 3vw;
 }
 .page-wrapper #zen-supporting h3 {
   font-family: "Bebas Neue", sans-serif;
@@ -153,7 +163,8 @@ body {
   width: 50%;
   position: absolute;
   top: 3.417vw;
-  left: 60%;
+  left: 50%;
+  margin-left: 12.09vw;
 }
 .page-wrapper #zen-supporting .participation h3 {
   position: absolute;
@@ -171,16 +182,746 @@ body {
 .page-wrapper #zen-supporting .participation p a {
   color: #ffffff;
 }
-.page-wrapper .viewall {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  position: absolute;
-  top: 0;
-  right: 3rem;
-  font-size: 2.5rem;
-  list-style: none;
-}
-.page-wrapper .viewall a {
+.page-wrapper #zen-benefits {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   color: #000000;
+  width: 100%;
+  font-size: 12.5rem;
+  background-color: #ffffff;
+  align-items: flex-end;
+  margin-top: 7.21vw;
+  padding: 6.09vw 0;
+}
+.page-wrapper #zen-benefits h3::before {
+  position: absolute;
+  content: "";
+  background: url("images/computer.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60%;
+  z-index: 5;
+  height: 34.6vw;
+  left: 6vw;
+}
+.page-wrapper #zen-benefits h3 {
+  font-size: 15.5rem;
+  margin-right: 6vw;
+}
+.page-wrapper #zen-benefits p::before {
+  position: absolute;
+  content: "";
+  background: url("images/left-sign.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 4.32vw;
+  height: 8.32vw;
+  right: 48vw;
+  bottom: 14vw;
+}
+.page-wrapper #zen-benefits p {
+  width: 38%;
+  margin-right: 8vw;
+  margin-bottom: 5vw;
+  font-size: 2rem;
+}
+.page-wrapper #zen-benefits p::after {
+  position: absolute;
+  content: "";
+  background: url("images/right-sign.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 4.32vw;
+  height: 8.32vw;
+  right: 2vw;
+  bottom: 5vw;
+}
+.page-wrapper #zen-requirements {
+  padding-top: 3vw;
+  padding-bottom: 10vw;
+  background-color: #ffffff;
+  width: 100%;
+  color: #000000;
+}
+.page-wrapper #zen-requirements h3, .page-wrapper #zen-requirements p {
+  margin-left: 5vw;
+}
+.page-wrapper #zen-requirements h3 {
+  font-size: 12.5rem;
+}
+.page-wrapper #zen-requirements p {
+  width: 49.53vw;
+}
+.page-wrapper #zen-requirements p a {
+  color: #9EB2A4;
+  text-decoration: none;
+}
+.page-wrapper #design-selection {
+  position: absolute;
+  bottom: 38vw;
+  right: 0;
+  width: 23%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: right;
+  padding: 2rem 2.1875rem;
+}
+.page-wrapper #design-selection h3 {
+  display: none;
+  font-size: 3rem;
+}
+.page-wrapper #design-selection nav ul li {
+  list-style: none;
+  margin-bottom: 2.375rem;
+}
+.page-wrapper #design-selection nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.page-wrapper #design-selection nav ul li a:first-of-type {
+  display: block;
+  font-size: 2.5rem;
+}
+.page-wrapper #design-selection nav ul li a:last-of-type {
+  font-weight: 400;
+}
+.page-wrapper footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vw;
+  position: relative;
+  padding-top: 3vw;
+  width: 100%;
+}
+.page-wrapper footer a {
+  font-size: 4rem;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 5vw;
+  margin-bottom: 1vw;
+  text-decoration-style: dotted;
+}
+.page-wrapper #zen-resources, .page-wrapper .design-archives {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 25%;
+  bottom: 25vw;
+}
+.page-wrapper #zen-resources h3, .page-wrapper .design-archives h3 {
+  font-size: 4rem;
+  color: #000000;
+  margin-left: 2.3vw;
+}
+.page-wrapper #zen-resources ul, .page-wrapper .design-archives ul {
+  margin-top: 3vw;
+  position: absolute;
+  top: 7vw;
+}
+.page-wrapper #zen-resources ul li, .page-wrapper .design-archives ul li {
+  list-style: none;
+  margin-bottom: 2vw;
+}
+.page-wrapper #zen-resources ul li a, .page-wrapper .design-archives ul li a {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.page-wrapper #zen-resources {
+  left: 15vw;
+}
+.page-wrapper .design-archives {
+  width: 30%;
+  left: 40vw;
+}
+.page-wrapper .design-archives ul li {
+  left: 2vw;
+}
+
+@media (max-width: 1600px) {
+  .page-wrapper #zen-resources, .page-wrapper .design-archives {
+    bottom: 32vw;
+  }
+  .page-wrapper #zen-resources h3, .page-wrapper .design-archives h3 {
+    margin-left: 3vw;
+  }
+  .page-wrapper .summary p:first-child:after {
+    font-size: 8.3rem;
+  }
+  .page-wrapper #design-selection {
+    bottom: 45vw;
+  }
+  .page-wrapper footer {
+    padding-bottom: 3vw;
+  }
+}
+@media (max-width: 1346px) {
+  .page-wrapper #zen-resources, .page-wrapper .design-archives {
+    bottom: 32vw;
+  }
+  .page-wrapper #zen-resources h3, .page-wrapper .design-archives h3 {
+    margin-left: 3vw;
+  }
+  .page-wrapper .summary p:first-child:after {
+    font-size: 8.3rem;
+  }
+  .page-wrapper #zen-supporting .participation h3 {
+    top: 12vw;
+  }
+}
+@media (max-width: 1183px) {
+  .page-wrapper #zen-resources, .page-wrapper .design-archives {
+    bottom: 32vw;
+  }
+  .page-wrapper #zen-resources h3, .page-wrapper .design-archives h3 {
+    margin-left: 5rem;
+  }
+  .page-wrapper .intro header h1 {
+    padding: 0;
+    margin: 1vw;
+    font-size: 2.5rem;
+    margin-left: 4rem;
+  }
+  .page-wrapper .intro header h2 {
+    font-size: 5.5rem;
+    color: #fff;
+    width: 30.3125rem;
+    transform: rotate(-0.25turn);
+    position: relative;
+    top: 8rem;
+    left: -6rem;
+  }
+  .page-wrapper .intro .summary p:first-child:after {
+    margin-top: 5vw;
+    top: -30vw;
+    font-size: 7.3rem;
+    line-height: 7rem;
+    width: 60%;
+  }
+  .page-wrapper .intro .summary p:last-child {
+    padding-top: 15vw;
+  }
+  .page-wrapper .intro .preamble {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20rem;
+    background-color: #FFFFFF;
+    overflow-y: hidden;
+    padding-bottom: 3vw;
+  }
+  .page-wrapper .intro .preamble h3 {
+    width: 50%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 10.5rem;
+    line-height: 11.375rem;
+    padding-top: 5.677vw;
+    padding-bottom: 0;
+    margin: 0;
+    margin-left: 7.76vw;
+    z-index: 3;
+  }
+  .page-wrapper .summary p:first-child:after {
+    margin-top: 5vw;
+    top: -30vw;
+    font-size: 7.3rem;
+  }
+  .page-wrapper .preamble {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20rem;
+    background-color: #FFFFFF;
+    overflow-y: hidden;
+    padding-bottom: 3vw;
+  }
+  .page-wrapper .preamble h3 {
+    width: 50%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 10.5rem;
+    line-height: 11.375rem;
+    padding-top: 5.677vw;
+    padding-bottom: 0;
+    margin: 0;
+    margin-left: 7.76vw;
+    z-index: 3;
+  }
+  .page-wrapper #zen-supporting .explanation {
+    width: 50%;
+  }
+  .page-wrapper #zen-supporting .explanation h3, .page-wrapper #zen-supporting .explanation p {
+    margin-left: 9.115vw;
+  }
+  .page-wrapper #zen-supporting .explanation h3 {
+    padding-top: 3.417vw;
+    font-size: 4.625rem;
+  }
+  .page-wrapper #zen-supporting .explanation p {
+    width: 32.344vw;
+    font-size: 1.5rem;
+  }
+  .page-wrapper #zen-supporting .participation {
+    width: 50%;
+    position: absolute;
+    top: 3.417vw;
+    left: 50%;
+    margin-left: 12.09vw;
+  }
+  .page-wrapper #zen-supporting .participation h3 {
+    position: absolute;
+    top: 12vw;
+    left: -50%;
+    color: #000000;
+    font-size: 6.25rem;
+    transform: rotate(-0.25turn);
+  }
+  .page-wrapper #zen-supporting .participation p {
+    width: 38.344vw;
+    position: relative;
+    left: -8%;
+  }
+  .page-wrapper #zen-supporting .participation p a {
+    color: #ffffff;
+  }
+  .page-wrapper #design-selection {
+    position: absolute;
+    bottom: 48vw;
+    right: 0;
+    width: 23%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: right;
+    padding: 2rem 2.1875rem;
+  }
+}
+@media (max-width: 1000px) {
+  .page-wrapper #design-selection {
+    width: 20%;
+  }
+  .page-wrapper #design-selection nav ul li a:first-of-type {
+    display: block;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 950px) {
+  .page-wrapper .intro {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-wrapper .intro header {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-wrapper .intro header h2 {
+    top: 4rem;
+    width: 75%;
+    transform: rotate(0turn);
+    left: 4rem;
+    margin-bottom: 10vw;
+  }
+  .page-wrapper .intro #zen-summary {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-wrapper .intro #zen-summary p:first-child {
+    visibility: hidden;
+    position: relative;
+    font-size: 2.375rem;
+    top: 0;
+  }
+  .page-wrapper .intro #zen-summary p:first-child:after {
+    width: 80vw;
+    top: -9vw;
+    left: 4rem;
+    font-size: 8rem;
+  }
+  .page-wrapper .intro #zen-summary p:last-child {
+    width: 80%;
+    padding-top: 5rem;
+    top: 26vw;
+    left: 4rem;
+  }
+  .page-wrapper .intro .preamble {
+    width: 100%;
+  }
+  .page-wrapper .intro .preamble h3 {
+    width: 70vw;
+    margin-bottom: 10vw;
+  }
+  .page-wrapper .intro .preamble p {
+    width: 80%;
+  }
+  .page-wrapper .intro .preamble p:last-child::after {
+    display: flex;
+    order: 2;
+    box-sizing: border-box;
+    position: absolute;
+    top: 18vw;
+    width: 100vw;
+    height: 50vw;
+    left: 0vw;
+  }
+  .page-wrapper .intro .preamble p:first-of-type {
+    margin-top: 20vw;
+  }
+  .page-wrapper #zen-supporting {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-wrapper #zen-supporting .explanation {
+    width: 80%;
+  }
+  .page-wrapper #zen-supporting .explanation h3 {
+    font-size: 6.25rem;
+    line-height: 7rem;
+  }
+  .page-wrapper #zen-supporting .explanation p {
+    width: 100%;
+  }
+  .page-wrapper #zen-supporting .participation {
+    width: 80%;
+    position: relative;
+    left: 0;
+    margin-left: 9.115vw;
+  }
+  .page-wrapper #zen-supporting .participation h3 {
+    top: 0;
+    position: relative;
+    right: 0;
+    left: 0;
+    transform: rotate(0turn);
+  }
+  .page-wrapper #zen-supporting .participation p {
+    width: 80vw;
+    left: 0;
+  }
+  .page-wrapper #zen-supporting #zen-benefits p {
+    width: 80%;
+    margin-top: 3rem;
+  }
+  .page-wrapper #zen-supporting #zen-benefits p::before {
+    position: absolute;
+    content: "";
+    background: url(images/left-sign.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 4.32vw;
+    height: 8.32vw;
+    left: 3vw;
+    right: 0vw;
+    bottom: 28vw;
+  }
+  .page-wrapper #zen-supporting #zen-requirements {
+    padding-bottom: 10vw;
+    background-color: #ffffff;
+    width: 100%;
+    color: #000000;
+  }
+  .page-wrapper #zen-supporting #zen-requirements h3, .page-wrapper #zen-supporting #zen-requirements p {
+    margin-left: 5vw;
+  }
+  .page-wrapper #zen-supporting #zen-requirements h3 {
+    font-size: 10.5rem;
+  }
+  .page-wrapper #zen-supporting #zen-requirements p {
+    width: 70%;
+  }
+  .page-wrapper #zen-supporting #zen-requirements p a {
+    color: #9EB2A4;
+    text-decoration: none;
+  }
+  .page-wrapper #design-selection {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    bottom: 0;
+    bottom: 6rem;
+    padding: 2rem 0;
+  }
+  .page-wrapper #design-selection h3 {
+    display: flex;
+    font-size: 5rem;
+    margin-left: 5vw;
+  }
+  .page-wrapper #design-selection nav ul li {
+    list-style: none;
+    margin-bottom: 2.375rem;
+  }
+  .page-wrapper #design-selection nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .page-wrapper #design-selection nav ul li a:first-of-type {
+    display: block;
+    font-size: 3.5rem;
+  }
+  .page-wrapper #design-selection nav ul li a:last-of-type {
+    font-weight: 400;
+  }
+  .page-wrapper footer {
+    display: flex;
+    flex-direction: column;
+    bottom: -171vw;
+    position: absolute;
+    width: 100%;
+    background-color: #9EB2A4;
+    padding: 6rem 0;
+  }
+  .page-wrapper footer a {
+    font-size: 3rem;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 5vw;
+    margin-bottom: 1vw;
+    text-decoration-style: dotted;
+  }
+  .page-wrapper #zen-resources, .page-wrapper .design-archives {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+  }
+  .page-wrapper #zen-resources h3, .page-wrapper .design-archives h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-left: 4.3vw;
+  }
+  .page-wrapper #zen-resources ul, .page-wrapper .design-archives ul {
+    margin-top: 2vw;
+    position: absolute;
+    top: 7vw;
+  }
+  .page-wrapper #zen-resources ul li, .page-wrapper .design-archives ul li {
+    list-style: none;
+    margin-bottom: 2vw;
+  }
+  .page-wrapper #zen-resources ul li a, .page-wrapper .design-archives ul li a {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .page-wrapper .design-archives {
+    width: 100vw;
+  }
+  .page-wrapper .design-archives ul li {
+    left: 2vw;
+  }
+}
+@media (max-width: 633px) {
+  .page-wrapper .intro {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-wrapper .intro header {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-wrapper .intro header h2 {
+    top: 4rem;
+    width: 75%;
+    transform: rotate(0turn);
+    left: 4rem;
+    margin-bottom: 10vw;
+  }
+  .page-wrapper .intro #zen-summary {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-wrapper .intro #zen-summary p:first-child {
+    visibility: hidden;
+    position: relative;
+    font-size: 2.375rem;
+    top: 0;
+  }
+  .page-wrapper .intro #zen-summary p:first-child:after {
+    width: 80vw;
+    top: -9vw;
+    left: 4rem;
+    font-size: 8rem;
+  }
+  .page-wrapper .intro #zen-summary p:last-child {
+    width: 80%;
+    padding-top: 5rem;
+    top: 26vw;
+    left: 4rem;
+  }
+  .page-wrapper .intro .preamble {
+    width: 100%;
+  }
+  .page-wrapper .intro .preamble h3 {
+    width: 70vw;
+    margin-bottom: 10vw;
+  }
+  .page-wrapper .intro .preamble p {
+    width: 80%;
+  }
+  .page-wrapper .intro .preamble p:last-child::after {
+    display: flex;
+    order: 2;
+    box-sizing: border-box;
+    position: absolute;
+    top: 18vw;
+    width: 100vw;
+    height: 50vw;
+    left: 0vw;
+  }
+  .page-wrapper .intro .preamble p:first-of-type {
+    margin-top: 20vw;
+  }
+  .page-wrapper #zen-supporting {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-wrapper #zen-supporting .explanation {
+    width: 80%;
+  }
+  .page-wrapper #zen-supporting .explanation h3 {
+    font-size: 6.25rem;
+    line-height: 7rem;
+  }
+  .page-wrapper #zen-supporting .explanation p {
+    width: 100%;
+  }
+  .page-wrapper #zen-supporting .participation {
+    width: 80%;
+    position: relative;
+    left: 0;
+    margin-left: 9.115vw;
+  }
+  .page-wrapper #zen-supporting .participation h3 {
+    top: 0;
+    position: relative;
+    right: 0;
+    left: 0;
+    transform: rotate(0turn);
+  }
+  .page-wrapper #zen-supporting .participation p {
+    width: 80vw;
+    left: 0;
+  }
+  .page-wrapper #zen-supporting #zen-benefits p {
+    width: 80%;
+    margin-top: 3rem;
+  }
+  .page-wrapper #zen-supporting #zen-benefits p::before {
+    position: absolute;
+    content: "";
+    background: url(images/left-sign.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 4.32vw;
+    height: 8.32vw;
+    left: 3vw;
+    right: 0vw;
+    bottom: 28vw;
+  }
+  .page-wrapper #zen-supporting #zen-requirements {
+    padding-bottom: 10vw;
+    background-color: #ffffff;
+    width: 100%;
+    color: #000000;
+  }
+  .page-wrapper #zen-supporting #zen-requirements h3, .page-wrapper #zen-supporting #zen-requirements p {
+    margin-left: 5vw;
+  }
+  .page-wrapper #zen-supporting #zen-requirements h3 {
+    font-size: 10.5rem;
+  }
+  .page-wrapper #zen-supporting #zen-requirements p {
+    width: 70%;
+  }
+  .page-wrapper #zen-supporting #zen-requirements p a {
+    color: #9EB2A4;
+    text-decoration: none;
+  }
+  .page-wrapper #design-selection {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    bottom: 0;
+    bottom: 6rem;
+    padding: 2rem 0;
+  }
+  .page-wrapper #design-selection h3 {
+    display: flex;
+    font-size: 5rem;
+    margin-left: 5vw;
+  }
+  .page-wrapper #design-selection nav ul li {
+    list-style: none;
+    margin-bottom: 2.375rem;
+  }
+  .page-wrapper #design-selection nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .page-wrapper #design-selection nav ul li a:first-of-type {
+    display: block;
+    font-size: 3.5rem;
+  }
+  .page-wrapper #design-selection nav ul li a:last-of-type {
+    font-weight: 400;
+  }
+  .page-wrapper footer {
+    display: flex;
+    flex-direction: column;
+    bottom: -178vw;
+    position: absolute;
+    width: 100%;
+    background-color: #9EB2A4;
+    padding: 7rem 0;
+  }
+  .page-wrapper footer a {
+    font-size: 3rem;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 5vw;
+    margin-bottom: 1vw;
+    text-decoration-style: dotted;
+  }
+  .page-wrapper #zen-resources, .page-wrapper .design-archives {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+  }
+  .page-wrapper #zen-resources h3, .page-wrapper .design-archives h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-left: 9.3vw;
+  }
+  .page-wrapper #zen-resources ul, .page-wrapper .design-archives ul {
+    margin-top: 2vw;
+    position: absolute;
+    top: 7vw;
+  }
+  .page-wrapper #zen-resources ul li, .page-wrapper .design-archives ul li {
+    list-style: none;
+    margin-bottom: 2vw;
+  }
+  .page-wrapper #zen-resources ul li a, .page-wrapper .design-archives ul li a {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .page-wrapper .design-archives {
+    width: 100vw;
+  }
+  .page-wrapper .design-archives ul li {
+    left: 2vw;
+  }
 }/*# sourceMappingURL=style.css.map */
